@@ -1,7 +1,7 @@
 <h3>{{@post.title}}</h3>
 
 {{#if @showBody}}
-  <span>{{@post.publishedAt}}</span>
+  <span>{{@post.formattedPublishedAt}}</span>
   <pre style="white-space: pre-wrap;">{{@post.body}}</pre>
 
   <button {{on "click" (action this.removePost @post)}}>
